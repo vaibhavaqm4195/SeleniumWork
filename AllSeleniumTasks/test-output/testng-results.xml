@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="72148" started-at="2022-03-28T11:11:00Z" finished-at="2022-03-28T11:12:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="72148" started-at="2022-03-28T11:11:00Z" finished-at="2022-03-28T11:12:12Z">
+      <class name="tests.MultipleTasks">
+        <test-method status="PASS" signature="WebDriverManager1()[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="WebDriverManager1" is-config="true" duration-ms="34381" started-at="2022-03-28T16:41:00Z" finished-at="2022-03-28T16:41:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebDriverManager1 -->
+        <test-method status="PASS" signature="getReport()[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="getReport" is-config="true" duration-ms="328" started-at="2022-03-28T16:41:34Z" finished-at="2022-03-28T16:41:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getReport -->
+        <test-method status="PASS" signature="DragAndDrop()[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="DragAndDrop" duration-ms="4747" started-at="2022-03-28T16:41:34Z" finished-at="2022-03-28T16:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragAndDrop -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="20" started-at="2022-03-28T16:41:39Z" finished-at="2022-03-28T16:41:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DragAndDrop status=SUCCESS method=MultipleTasks.DragAndDrop()[pri:0, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="FAIL" signature="Scrooling()[pri:1, instance:tests.MultipleTasks@3c0ecd4b]" name="Scrooling" duration-ms="10105" started-at="2022-03-28T16:41:39Z" finished-at="2022-03-28T16:41:49Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Widget Factory')]"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AQMIT-DSK-10159', ip: '10.98.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: D:\Users\Temp\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f1845dde361053da2f6fa1c379e15f27
+*** Element info: {Using=xpath, value=//*[contains(text(),'Widget Factory')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Widget Factory')]"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AQMIT-DSK-10159', ip: '10.98.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: D:\Users\Temp\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f1845dde361053da2f6fa1c379e15f27
+*** Element info: {Using=xpath, value=//*[contains(text(),'Widget Factory')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at tests.MultipleTasks.Scrooling(MultipleTasks.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Scrooling -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="201" started-at="2022-03-28T16:41:49Z" finished-at="2022-03-28T16:41:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Scrooling status=FAILURE method=MultipleTasks.Scrooling()[pri:1, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="PASS" signature="ActionsTask()[pri:2, instance:tests.MultipleTasks@3c0ecd4b]" name="ActionsTask" duration-ms="381" started-at="2022-03-28T16:41:49Z" finished-at="2022-03-28T16:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActionsTask -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="0" started-at="2022-03-28T16:41:50Z" finished-at="2022-03-28T16:41:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ActionsTask status=SUCCESS method=MultipleTasks.ActionsTask()[pri:2, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="PASS" signature="AlertTask()[pri:3, instance:tests.MultipleTasks@3c0ecd4b]" name="AlertTask" duration-ms="11751" started-at="2022-03-28T16:41:50Z" finished-at="2022-03-28T16:42:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertTask -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="0" started-at="2022-03-28T16:42:02Z" finished-at="2022-03-28T16:42:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AlertTask status=SUCCESS method=MultipleTasks.AlertTask()[pri:3, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="PASS" signature="DropDown()[pri:4, instance:tests.MultipleTasks@3c0ecd4b]" name="DropDown" duration-ms="6079" started-at="2022-03-28T16:42:02Z" finished-at="2022-03-28T16:42:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDown -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="1" started-at="2022-03-28T16:42:08Z" finished-at="2022-03-28T16:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DropDown status=SUCCESS method=MultipleTasks.DropDown()[pri:4, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="PASS" signature="ExcelTask()[pri:5, instance:tests.MultipleTasks@3c0ecd4b]" name="ExcelTask" duration-ms="1764" started-at="2022-03-28T16:42:08Z" finished-at="2022-03-28T16:42:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcelTask -->
+        <test-method status="PASS" signature="ScreenShot(org.testng.ITestResult)[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="ScreenShot" is-config="true" duration-ms="1" started-at="2022-03-28T16:42:09Z" finished-at="2022-03-28T16:42:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExcelTask status=SUCCESS method=MultipleTasks.ExcelTask()[pri:5, instance:tests.MultipleTasks@3c0ecd4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShot -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.MultipleTasks@3c0ecd4b]" name="afterTest" is-config="true" duration-ms="2349" started-at="2022-03-28T16:42:09Z" finished-at="2022-03-28T16:42:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.MultipleTasks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
