@@ -87,7 +87,7 @@ public class BaseClass {
 				//Safari code
 			}
 		driver.get(url);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //		test.log(Status.INFO, "Browser Started Successfully");
 		}

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Users\Temp\git\SeleniumWork\AllSeleniumTasks\testng.xml</span>
+                    <span>D:\Users\Temp\git\SeleniumWork\AllSeleniumTasks\testng1.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="Scrooling">Scrooling</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ParallelTest1" hash-for-method="openChromeParallel">openChromeParallel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="ActionsTask">ActionsTask</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.ParallelTest" hash-for-method="openEdgeParallel">openEdgeParallel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="AlertTask">AlertTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="DragAndDrop">DragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="DropDown">DropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.MultipleTasks" hash-for-method="ExcelTask">ExcelTask</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,32 +151,85 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.ParallelTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.MultipleTasks</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openEdgeParallel">
-                  </a> <!-- openEdgeParallel -->
-                  <span class="method-name">openEdgeParallel</span>
+                  <a name="Scrooling">
+                  </a> <!-- Scrooling -->
+                  <span class="method-name">Scrooling</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Widget Factory&apos;)]&quot;}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AQMIT-DSK-10159&apos;, ip: &apos;10.98.0.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: D:\Users\Temp\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71d745372c28ec90514959523e48286c
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Widget Factory&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at tests.MultipleTasks.Scrooling(MultipleTasks.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.ParallelTest1</span>
+              <span class="class-name">tests.MultipleTasks</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="openChromeParallel">
-                  </a> <!-- openChromeParallel -->
-                  <span class="method-name">openChromeParallel</span>
+                  <a name="ActionsTask">
+                  </a> <!-- ActionsTask -->
+                  <span class="method-name">ActionsTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AlertTask">
+                  </a> <!-- AlertTask -->
+                  <span class="method-name">AlertTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DragAndDrop">
+                  </a> <!-- DragAndDrop -->
+                  <span class="method-name">DragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DropDown">
+                  </a> <!-- DropDown -->
+                  <span class="method-name">DropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExcelTask">
+                  </a> <!-- ExcelTask -->
+                  <span class="method-name">ExcelTask</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -155,17 +237,16 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Users\Temp\git\SeleniumWork\AllSeleniumTasks\testng.xml</span>
+            <span class="header-content">D:\Users\Temp\git\SeleniumWork\AllSeleniumTasks\testng1.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;6&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;6&quot; name=&quot;Test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.ParallelTest&quot;/&gt;
-      &lt;class name=&quot;tests.ParallelTest1&quot;/&gt;
+      &lt;class name=&quot;tests.MultipleTasks&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -179,7 +260,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,15 +286,31 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'openEdgeParallel')
-data.setCell(0, 2, 'tests.ParallelTest')
-data.setCell(0, 3, 36478);
+data.setCell(0, 1, 'AlertTask')
+data.setCell(0, 2, 'tests.MultipleTasks')
+data.setCell(0, 3, 25645);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openChromeParallel')
-data.setCell(1, 2, 'tests.ParallelTest1')
-data.setCell(1, 3, 35220);
+data.setCell(1, 1, 'DropDown')
+data.setCell(1, 2, 'tests.MultipleTasks')
+data.setCell(1, 3, 15896);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ExcelTask')
+data.setCell(2, 2, 'tests.MultipleTasks')
+data.setCell(2, 3, 14785);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Scrooling')
+data.setCell(3, 2, 'tests.MultipleTasks')
+data.setCell(3, 3, 10148);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DragAndDrop')
+data.setCell(4, 2, 'tests.MultipleTasks')
+data.setCell(4, 3, 8038);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ActionsTask')
+data.setCell(5, 2, 'tests.MultipleTasks')
+data.setCell(5, 3, 442);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -233,9 +330,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.MultipleTasks</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">WindowsHandleTask</span>
+                <br/>
+                <span class="ignored-method-name">SoftAssertTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -244,18 +350,69 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.ParallelTest1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">openChromeParallel</span>
+              <div class="chronological-class-name">tests.MultipleTasks</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">WebDriverManager1</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.ParallelTest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">getReport</span>
+                <span class="method-start">35606 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">openEdgeParallel</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">DragAndDrop</span>
+                <span class="method-start">38232 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=DragAndDrop status=SUCCESS method=MultipleTasks.DragAndDrop()[pri:0, instance:tests...)</span>
+                <span class="method-start">46271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Scrooling</span>
+                <span class="method-start">46279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=Scrooling status=FAILURE method=MultipleTasks.Scrooling()[pri:1, instance:tests.Mul...)</span>
+                <span class="method-start">56448 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ActionsTask</span>
+                <span class="method-start">56678 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=ActionsTask status=SUCCESS method=MultipleTasks.ActionsTask()[pri:2, instance:tests...)</span>
+                <span class="method-start">57128 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">AlertTask</span>
+                <span class="method-start">57134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=AlertTask status=SUCCESS method=MultipleTasks.AlertTask()[pri:3, instance:tests.Mul...)</span>
+                <span class="method-start">82781 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">DropDown</span>
+                <span class="method-start">82783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=DropDown status=SUCCESS method=MultipleTasks.DropDown()[pri:4, instance:tests.Multi...)</span>
+                <span class="method-start">98681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">ExcelTask</span>
+                <span class="method-start">98683 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">ScreenShot([TestResult name=ExcelTask status=SUCCESS method=MultipleTasks.ExcelTask()[pri:5, instance:tests.Mul...)</span>
+                <span class="method-start">113470 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">113471 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
